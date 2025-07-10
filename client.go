@@ -34,7 +34,7 @@ func NewClient(config *Config) *Client {
 	}
 }
 
-// Run starts the client
+// Starts the client
 func (c *Client) Run() error {
 	if err := c.ws.Connect(); err != nil {
 		return err
